@@ -8,7 +8,7 @@ const Detail = (props) => {
     const {id} = useParams(); 
 
     useEffect(() => {
-        axios.get("http://localhost:8000/api/objects/" + id)
+        axios.get("http://localhost:8000/api/object/" + id)
             .then( (res) => {
                 console.log(res.data);
                 setObject(res.data);
